@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+}
+
+.icono-colorfly {
+    width: 46px;
+    height: 46px;
+    margin-right: 10px;
+}
