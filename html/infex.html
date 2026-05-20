@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colorfly Studio</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <img src="../images.png" alt="icono-colorfly" class="icono-colorfly">
+        <h1>Colorfly Studio</h1>
+    </header>
+
+    <main class="main">
+        <section>
+            <div class="container">
+                <label for="cantidad-color">Cantidad:</label>
+                <select name="cantidad-color" id="cantidad-color" class="cantidad-color">
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <label for="formato-color">Formato:</label>
+                <select name="formato-color" id="formato-color" class="formato-color">
+                    <option value="hsl">hsl</option>
+                    <option value="hex">hex</option>
+                </select>
+            </div>
+        </section>
+        <button id="boton-generar" class="boton-generar">Generar</button>
+    </main>
+    <footer></footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
