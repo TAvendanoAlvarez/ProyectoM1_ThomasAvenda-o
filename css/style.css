@@ -18,3 +18,44 @@
     height: 46px;
     margin-right: 10px;
 }
+.paleta-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tarjeta-color {
+    flex: 1;
+    min-width: 100px;
+}
+
+.bloque-color {
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 6px;
+}
+
+.codigo-color {
+    font-size: 12px;
+    font-family: monospace;
+    word-break: break-all;
+}
+
+.boton-copiar {
+    background: transparent;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.boton-copiar:hover {
+    opacity: 0.7;
+}
