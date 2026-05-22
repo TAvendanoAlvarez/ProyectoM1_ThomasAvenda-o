@@ -7,7 +7,7 @@ const colorHsl = function() {
     const S = Math.floor(Math.random() * 100);;
     const L = Math.floor(Math.random() * 100);;
 
-    const colorHslGenerado = `hsl(${H} ${S}% ${L}%)`
+    const colorHslGenerado = `hsl(${H}, ${S}%, ${L}%)`
 
     const colorOscuro = L < 50;
 
@@ -36,7 +36,7 @@ const copiarColor = function(texto, boton) {
     navigator.clipboard.writeText(texto).then(function() {
         boton.textContent = '¡Copiado!';
         setTimeout(function() {
-            boton.textContent = texto;
+            boton.textContent = 'Copiar';
         }, 1500);
     });
 }
@@ -69,8 +69,7 @@ for (let i = 0; i < cantidad; i++) {
             <div class="tarjeta-color">
                 <div class="bloque-color" style="background-color: ${colorGenerado};">
                     <p class="codigo-color" style="color: ${colorTexto};">${colorGenerado}</p>
-                    <button
-                        class="boton-copiar"
+                    <button class="boton-copiar"
                         style="color: ${colorTexto}; border-color: ${colorTexto};"
                         onclick="copiarColor('${colorGenerado}', this)"
                     >
