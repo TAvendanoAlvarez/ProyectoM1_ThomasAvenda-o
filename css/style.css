@@ -37,7 +37,7 @@ body {
 }
 
 .bloque-color {
-    height: 56vh;
+    height: 64vh;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
