@@ -37,7 +37,7 @@ body {
 }
 
 .bloque-color {
-    height: 64vh;
+    height: 56vh;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,6 @@ body {
 .codigo-color {
     font-size: 12px;
     font-family: monospace;
-    word-break: break-all;
 }
 
 .boton-copiar {
@@ -102,6 +101,25 @@ body {
     font-family: 'Archivo Black', sans-serif;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 8px;
+    border-top: 1px solid rgba(75, 61, 61, 0.201);
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.icono-github {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
 
 /* HOVERS */
 
