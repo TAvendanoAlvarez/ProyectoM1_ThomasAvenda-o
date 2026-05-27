@@ -45,6 +45,10 @@ const generarPaleta = function() {
     const cantidad = parseInt(cantidadColor.value);
     const formato = formatoColor.value;
 
+    const mensaje = document.getElementById('mensaje-paleta');
+    mensaje.textContent = `Paleta de ${cantidad} colores en ${formato.toUpperCase()} generada ✓`;
+    mensaje.classList.add('visible');
+
     const contenedor = document.querySelector('.paleta-contenedor')
     contenedor.innerHTML = '';
 for (let i = 0; i < cantidad; i++) {
